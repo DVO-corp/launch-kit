@@ -1,0 +1,10 @@
+{
+  "name": "launch-kit",
+  "version": "0.1.0",
+  "description": "Take an app you built with an AI tool to production on your own server: HTTPS, database backups, logs, a Grafana dashboard and push-to-deploy.",
+  "author": { "name": "DVO", "url": "https://dvocorp.com" },
+  "homepage": "https://github.com/DVO-corp/launch-kit",
+  "repository": "https://github.com/DVO-corp/launch-kit",
+  "license": "MIT",
+  "keywords": ["deploy", "production", "docker", "vps", "self-hosting", "monitoring", "backups"]
+}

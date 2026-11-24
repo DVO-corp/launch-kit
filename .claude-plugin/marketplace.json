@@ -1,0 +1,17 @@
+{
+  "name": "dvo",
+  "owner": {
+    "name": "DVO",
+    "url": "https://dvocorp.com"
+  },
+  "metadata": {
+    "description": "Tools from DVO for running products in production."
+  },
+  "plugins": [
+    {
+      "name": "launch-kit",
+      "source": "./",
+      "description": "Take an app you built with an AI tool to production on your own server: HTTPS, database backups, logs, a Grafana dashboard and push-to-deploy."
+    }
+  ]
+}

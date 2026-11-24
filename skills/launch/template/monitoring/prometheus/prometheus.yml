@@ -1,0 +1,3 @@
+# Alloy scrapes the targets and writes here (remote write); nothing to scrape directly.
+global:
+  scrape_interval: 30s

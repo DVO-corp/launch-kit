@@ -1,0 +1,28 @@
+{
+	# HTTP metrics (requests, status codes, latency) for the dashboard.
+	metrics
+}
+
+{$DOMAIN} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	reverse_proxy app:{$APP_PORT}
+
+	log {
+		output stdout
+		format json
+	}
+}
+
+# Metrics endpoint for Alloy. Not published on the host: only containers of this
+# stack can reach it.
+:9180 {
+	metrics
+}
